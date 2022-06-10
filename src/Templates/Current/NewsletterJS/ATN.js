@@ -85,7 +85,7 @@ const ATN = (props) => {
 						<table role="presentation" style="width:100%; border:none; border-spacing:0; text-align:left; font-family:Arial,sans-serif; font-size:16px; line-height:18pt; color:#000000; background-color: #FFFFFF;" bgcolor="#FFFFFF">
 						<tr>
 									<td style="padding:10px; background-color:#ffffff;">						
-										<p style="margin-bottom:1em;"><a href="${props.ar1.URL}" style="font-weight:bold; text-decoration: none; color: #000000;" target="_blank">${props.ar1.head}</a><br>
+										<p style="margin-bottom:1em;"><a href="${props.ar1.URL}" style="font-weight:bold; text-decoration: none; color: #000000;" target="_blank">${props.ar1.Head}</a><br>
 											${props.ar1.Bod}.&nbsp;<a href="${props.ar1.URL}" style="text-decoration:underline; font-weight: bold; color: #196767;" target="_blank">Read More &gt;&gt;</a></p>
 										
 												<p style="margin-bottom:1em;"><a href="${props.ad1.URL}" style="font-weight:bold; text-decoration: none; color: #000000;" target="_blank">${props.ad1.Head}</a> <span style="color:#000000; font-weight:normal; font-size:10px; line-height:12px;">[ad]</span><br>

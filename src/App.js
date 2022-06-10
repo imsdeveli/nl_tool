@@ -29,7 +29,7 @@ function App() {
     URL: "",
     Head: "",
     Bod: "",
-    call: "",
+    call: ""
   };
   const [Ar1, setAr1] = useState(example);
   const [Ar2, setAr2] = useState(example);
@@ -44,11 +44,11 @@ function App() {
 
   // const compareData = (formInputData) => {
   //   let keys = Object.keys(formInputData);
-  //   console.log("keys", keys);
+  //   //console.log("keys", keys);
   //   keys.forEach((key) => {
-  //     console.log("key", key);
-  //     console.log("formInputData[key]", formInputData[key]);
-  //     // console.log("key.input", key.input);
+  //     //console.log("key", key);
+  //     //console.log("formInputData[key]", formInputData[key]);
+  //     // //console.log("key.input", key.input);
 
   //     // callUpdateOn(key);
 
@@ -89,8 +89,8 @@ function App() {
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
-    console.log("bodArray: ", bodArray);
-    console.log("bodString:   ", bodString);
+    // //console.log("bodArray: ", bodArray);
+    // //console.log("bodString:   ", bodString);
 
     let bodyObj = { bodString, bodArray };
     return bodyObj;
@@ -111,16 +111,16 @@ function App() {
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
-    console.log("bodArray: ", bodArray);
-    console.log("bodString:   ", bodString);
+    // //console.log("bodArray: ", bodArray);
+    // //console.log("bodString:   ", bodString);
 
     let bodyObj = { bodString, bodArray };
     return bodyObj;
   };
 
   const handleArticle = (ArInput, arNum) => {
-    console.log("ArInput:", ArInput);
-    console.log("ArNum:", arNum);
+    //console.log("ArInput:", ArInput);
+    //console.log("ArNum:", arNum);
 
     const theUrl = `${ArInput}`;
     const theHeaders = { "Access-Control-Allow-Origin": "*" };
@@ -145,7 +145,7 @@ function App() {
 
           let bodPar4 = bodyArray.slice(9, 12).join("");
 
-          console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
+          //console.log("bodyArrays", bodPar1, bodPar2, bodPar3, bodPar4);
 
           $(".site-content").each((index, element) => {
             let url = ArInput;
@@ -160,11 +160,11 @@ function App() {
               Par1: bodPar1,
               Par2: bodPar2,
               Par3: bodPar3,
-              Par4: bodPar4,
+              Par4: bodPar4
             });
-            console.log("TheCheapInvestor URL:", url);
-            console.log("TheCheapInvestor title:", title);
-            console.log("TheCheapInvestor body:", body);
+            //console.log("TheCheapInvestor URL:", url);
+            //console.log("TheCheapInvestor title:", title);
+            //console.log("TheCheapInvestor body:", body);
           });
         })
         .catch((error) => console.log("error", error));
@@ -184,7 +184,7 @@ function App() {
 
           let bodPar4 = bodyArray.slice(9, 12).join("");
 
-          console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
+          //console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
           $(".single_post").each((index, element) => {
             let url = ArInput;
             let title = $(element).find(".title").text();
@@ -198,11 +198,11 @@ function App() {
               Par1: bodPar1,
               Par2: bodPar2,
               Par3: bodPar3,
-              Par4: bodPar4,
+              Par4: bodPar4
             });
-            console.log("PTR URL:", url);
-            console.log("PTR title:", title);
-            console.log("PTR body:", body);
+            //console.log("PTR URL:", url);
+            //console.log("PTR title:", title);
+            //console.log("PTR body:", body);
           });
         })
         .catch((error) => console.log("error", error));
@@ -223,7 +223,7 @@ function App() {
 
           let bodPar4 = bodyArray.slice(9, 12).join("");
 
-          console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
+          //console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
 
           $(".site-content").each((index, element) => {
             let url = ArInput;
@@ -238,11 +238,11 @@ function App() {
               Par1: bodPar1,
               Par2: bodPar2,
               Par3: bodPar3,
-              Par4: bodPar4,
+              Par4: bodPar4
             });
-            console.log("OTR URL:", url);
-            console.log("OTR title:", title);
-            console.log("OTR body:", body);
+            //console.log("OTR URL:", url);
+            //console.log("OTR title:", title);
+            //console.log("OTR body:", body);
           });
         })
         .catch((error) => console.log("error", error));
@@ -251,17 +251,17 @@ function App() {
   };
 
   const handleAd = (adInput, adNum) => {
-    console.log("adInput:", adInput);
-    console.log("adNum:", adNum);
+    //console.log("adInput:", adInput);
+    //console.log("adNum:", adNum);
     const input = `<html>${adInput}</html>`;
     let $ = cheerio.load(input);
 
     // let body = $[0]
-    // console.log("boddddy", body);
+    // //console.log("boddddy", body);
     // let bodyy = body
-    // console.log("boddddyy", bodyy);
+    // //console.log("boddddyy", bodyy);
     // body = $(body).toArray();
-    // console.log("boddddy", body);
+    // //console.log("boddddy", body);
     $("html").each((index, element) => {
       let url = $("a").attr("href");
       // let body = $("body")[0].children[3].data;
@@ -280,22 +280,22 @@ function App() {
         URL: url,
         Head: head,
         Bod: body,
-        Call: call,
+        Call: call
       });
-      console.log("Ad1 Head", head);
-      console.log("Ad1 Call", call);
-      console.log("Ad1 Body", body);
-      console.log("Ad1 URL", url);
+      //console.log("Ad1 Head", head);
+      //console.log("Ad1 Call", call);
+      //console.log("Ad1 Body", body);
+      //console.log("Ad1 URL", url);
     });
     return;
   };
   // useEffect((shallowEqual) => {
-  //   console.log("formInputData", formInputData);
+  //   //console.log("formInputData", formInputData);
   //   if(shallowEqual(formInputData, currentData)){
-  //     console.log('input and current equal')
+  //     //console.log('input and current equal')
   //   }else{
   //   setCurrentData(formInputData);
-  //   console.log("currentData", currentData);
+  //   //console.log("currentData", currentData);
   //   }
   // }, [formInputData])
 

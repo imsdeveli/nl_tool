@@ -1,5 +1,6 @@
 const PTR_Featured = (props) => {
-  return `<!DOCTYPE html>
+  return `
+  <!DOCTYPE html>
   <html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
   <head>
   <meta charset="utf-8">
@@ -20,6 +21,12 @@ const PTR_Featured = (props) => {
   </xml>
   </noscript>
   <![endif]-->
+  
+  
+  
+  
+  
+  
   <style>
       table, td, div, h1, p {
           font-family: Arial, sans-serif;
@@ -76,35 +83,33 @@ const PTR_Featured = (props) => {
             <td style="padding:30px; background-color:#ffffff;">
           <div align="center" style="border-bottom:2px solid black;"><img src="http://hosting.fyleio.com/39281/public/Pro%20Trading%20Research%20Logo.jpg?c=1518108609451" width="259" /></div>
             
-          <p style="margin-bottom:1em; text-align: center;" align="center"><a href="#RC1" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">Related Content Headline</a></p>
+          <p style="margin-bottom:1em; text-align: center;" align="center"><a href="${props.Featured_URL}" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">${props.Featured_Text}</a></p>
             
           <p style="margin-bottom:1em; font-size:12pt; line-height:16pt; font-style: italic;">Today's Featured Story:</p>
             
-              <h1 style="margin-bottom:1em; font-size:20pt; line-height:24pt; font-weight:bold; letter-spacing:-0.02em;"><a href="#LINK" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">Can Energy Build on its 2021 Move?</a></h1>
+              <h1 style="margin-bottom:1em; font-size:20pt; line-height:24pt; font-weight:bold; letter-spacing:-0.02em;"><a href="${props.ar1.URL}" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">${props.ar1.Head}</a></h1>
             
-          <p style="margin-bottom:1em;">The short answer is yes, yes it can.</p>
+          <p style="margin-bottom:1em;">${props.ar1.Par1}</p>
   
-          <p style="margin-bottom:1em;">Energy names were hit hard in 2020 as economies shut down in the wake of the coronavirus. The sector bounced back in 2021 when economies reopened. Energy rallied 39% in 2021 to outpace Real Estate (31%) and tech (29%) as the top performing sector.</p>
+          <p style="margin-bottom:1em;">${props.ar1.Par2}</p>
             
           <div align="center" style="border-top:1px dotted black;">&nbsp;</div>  
-          <p style="margin-top:0em; margin-bottom:1em; font-size:16pt; line-height:20pt; font-weight:bold; letter-spacing:-0.02em;"><a href="#AD1LINK" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">Ad 1 Headline</a>&nbsp;<span style="font-size:10pt; line-height:12pt; font-weight:normal;">[sponsor]</span></h1>
+          <p style="margin-top:0em; margin-bottom:1em; font-size:16pt; line-height:20pt; font-weight:bold; letter-spacing:-0.02em;"><a href="${props.ad1.URL}" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">${props.ad1.Head}</a>&nbsp;<span style="font-size:10pt; line-height:12pt; font-weight:normal;">[sponsor]</span></h1>
           
-          <p style="margin-bottom:1em;">Ad 1 Offer Body. <a href="#AD1LINK" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">Ad 1 Call To Action</a></p>					  
+          <p style="margin-bottom:1em;">${props.ad1.Bod}<a href="${props.ad1.URL}" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">${props.ad1.Call}</a></p>					  
             
           <div align="center" style="border-top:1px dotted black;">&nbsp;</div>
           
-          <p style="margin-top:0em; margin-bottom:1em;">Sector Performance<br>
-            Perhaps the most interesting aspect about this rally is that it remains the second cheapest group in terms of forward earnings. Energy as a sector trades at approximately 8x forward earnings. Only Utilities is cheaper at 3x. Real Estate and tech, the other top performers, trade at a lofty 37x and 31x respectively.</p>
+          <p style="margin-top:0em; margin-bottom:1em;">${props.ar1.Par3}</p>
             
-          <p style="margin-bottom:1em;">Sector Forward P/E Ratio<br>
-            Growth expectations for 2022 remain in place as evident by the Fed’s recent GDP forecast which it upgraded to 3.6-4.5% from 3.4-4.5% in its December meeting. This means the demand picture should remain in play...</p>
+          <p style="margin-bottom:1em;">${props.ar1.Par4}</p>
             
-          <p style="margin-bottom:2em; text-align: center; text-transform: uppercase; letter-spacing: 1px;" align="center"><a href="#LINK" style="background: #0095da; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0; text-underline-color:#0095da"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%; mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt; font-weight:bold;">&nbsp;Continue Reading&nbsp;</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
+          <p style="margin-bottom:2em; text-align: center; text-transform: uppercase; letter-spacing: 1px;" align="center"><a href="${props.ar1.URL}" style="background: #0095da; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0; text-underline-color:#0095da"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%; mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt; font-weight:bold;">&nbsp;Continue Reading&nbsp;</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
             
           <div align="center" style="border-top:1px dotted black;">&nbsp;</div>  
-          <p style="margin-top:0em; margin-bottom:1em; font-size:16pt; line-height:20pt; font-weight:bold; letter-spacing:-0.02em;"><a href="#AD2LINK" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">Ad 2 Headline</a>&nbsp;<span style="font-size:10pt; line-height:12pt; font-weight:normal;">[sponsor]</span></h1>
+          <p style="margin-top:0em; margin-bottom:1em; font-size:16pt; line-height:20pt; font-weight:bold; letter-spacing:-0.02em;"><a href="${props.ad2.URL}" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">${props.ad2.Head}</a>&nbsp;<span style="font-size:10pt; line-height:12pt; font-weight:normal;">[sponsor]</span></h1>
           
-          <p style="margin-bottom:2em;">Ad 2 Offer Body. <a href="#AD2LINK" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">Ad 2 Call To Action</a></p>					  
+            <p style="margin-bottom:1em;">${props.ad2.Bod}<a href="${props.ad2.URL}" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">${props.ad2.Call}</a></p>					  
             
             <div align="center" style="border-top:2px solid black;">&nbsp;</div>				  
             </td>
@@ -155,12 +160,20 @@ const PTR_Featured = (props) => {
             
           <p style="margin-bottom:1em;">In addition to providing the foregoing information, if you choose to correspond further with us through email, we may retain the content of your email messages together with your email address and our responses. We provide the same protections for these electronic communications that we employ in the maintenance of information received by mail and telephone.</p> 
             
-          <p style="margin-bottom:1em;">It also explains important information that ensures we won’t abuse the information that you provide to us in good faith. By accessing and using our website, you can trust that what you want to be kept private, will be kept private. If at any time, you would like to read our Privacy Policy and get a better understanding of your rights and liabilities under the law. Feel free to visit our site, find the privacy policy in the footer and read it. If there is something you are concerned about or wish to get more clarity on, please let us know by contacting us at support@protradingresearch.com. The Privacy Policy also informs you of how to notify us to stop using your personal information. If you wish to view our official policies, please visit our website <a href="https://protradingresearch.com/" target="_blank" style="color:#0095da;">https://protradingresearch.com/</a></p> 
+          <p style="margin-bottom:1em;">It also explains important information that ensures we won’t abuse the information that you provide to us in good faith. By accessing and using our website, you can trust that what you want to be kept private, will be kept private. If at any time, you would like to read our Privacy Policy and get a better understanding of your rights and liabilities under the law. Feel free to visit our site, find the privacy policy in the footer and read it. If there is something you are concerned about or wish to get more clarity on, please let us know by contacting us at support@protradingresearch.com. The Privacy Policy also informs you of how to notify us to stop using your personal information. If you wish to view our official policies, please visit our website <a href="https://protradingresearch.com/" target="_blank" style="color:#0095da;">https://protradingresearch.com/</a></p>
+          
+          <p style="margin-bottom:1em;">At ProTradingResearch, we are strongly committed to protecting your privacy and providing a safe & high-quality online experience for all of our visitors. We understand that you care about how the information you provide to us is used and shared. We have developed a Privacy Policy to inform you of our policies regarding the collection, use, and disclosure of information we receive from users of our website. ProTradingResearch operates the Website.</a></p>
+          
+          <p style="margin-bottom:1em;">Our Privacy Policy, along with our Term & Conditions, governs your use of this site. By using https://protradingresearch.com/, or by accepting the Terms of Use (via opt-in, checkbox, pop-up, or clicking an email link confirming the same), you agree to be bound by our Terms & Conditions and our Privacy Policy. If you have provided personal, billing, or other voluntarily provided information, you may access, review, and make changes to it via instructions found on the Website or by emailing us at support@protradingresearch.com. To manage your receipt of marketing and non-transactional communications, you may unsubscribe by clicking the “unsubscribe” link located on the bottom of any marketing email. Emails related to the purchase or delivery of orders are provided automatically – Customers are not able to opt out of transactional emails. We will try to accommodate any requests related to the management of Personal Information in a timely manner. However, it is not always possible to completely remove or modify information in our databases (for example, if we have a legal obligation to keep it for certain timeframes, for example). If you have any questions, simply reply to this email or visit our website to view our official policies.</a></p>
+  
             
           <p style="margin-bottom:1em; text-align: center;" align="center">{{Sender_Name}}<br>
             {{Sender_Address}}, {{Sender_City}}, {{Sender_State}} {{Sender_Zip}}</p>
             
-            <p style="margin-bottom:1em; text-align: center;" align="center"><a class="unsub" href="{{{unsubscribe}}}" target="_blank" style="color:#0095da; text-decoration:underline;">UNSUBSCRIBE HERE</a></p>
+            <p style="margin-bottom:1em; text-align: center;" align="center"><a class="unsub" href="{{{unsubscribe}}}" target="_blank" style="color:#0095da; text-decoration:underline;">UNSUBSCRIBE HERE</a></p><br><br>
+            
+            
+            <h1 style="margin-top:0; margin-bottom:1em; font-size:9pt; line-height:15pt; font-weight:bold; letter-spacing:-0.02em; text-align: left">Be sure that you receive future email from ProTrading Research &ndash; please <a href="https://protradingresearch.com/ptr_whitelisting_instructions.html" style="font-weight:bold; color:#00a651;" target="_blank">whitelist our email address</a> with your email provider. </h1>
           </td>
           </tr>			  	 
         </td>
@@ -169,7 +182,8 @@ const PTR_Featured = (props) => {
     <!--END - OUTER SCAFFOLD-->
   </div>	
   </body>
-  </html>`;
+  </html>
+  `;
 };
 
 export default PTR_Featured;

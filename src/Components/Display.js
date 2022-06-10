@@ -1,20 +1,20 @@
 import React from "react";
-import ATN from "../Templates/Current/ATN.js";
-import OTR from "../Templates/Current/OTR.js";
-import PTR from "../Templates/Current/PTR.js";
-import TCI from "../Templates/Current/TCI.js";
-import WIA from "../Templates/Current/WIA.js";
-import ATN_Featured from "../Templates/Current/ATN_Featured.js";
-import OTR_Featured from "../Templates/Current/OTR_Featured.js";
-import PTR_Featured from "../Templates/Current/PTR_Featured.js";
-import TCI_Featured from "../Templates/Current/TCI_Featured.js";
+import ATN from "../Templates/Current/NewsletterJS/ATN.js";
+import OTR from "../Templates/Current/NewsletterJS/OTR.js";
+import PTR from "../Templates/Current/NewsletterJS/PTR.js";
+import TCI from "../Templates/Current/NewsletterJS/TCI.js";
+import WIA from "../Templates/Current/NewsletterJS/WIA.js";
+import ATN_Featured from "../Templates/Current/FeaturedJS/ATN_Featured.js";
+import OTR_Featured from "../Templates/Current/FeaturedJS/OTR_Featured.js";
+import PTR_Featured from "../Templates/Current/FeaturedJS/PTR_Featured.js";
+import TCI_Featured from "../Templates/Current/FeaturedJS/TCI_Featured.js";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "../scrollBox.css";
 
 import Preview from "./Preview";
 
 const Display = (props) => {
-  console.log("display Props", props);
+  // console.log("display Props", props);
 
   let template = props.Newsletter;
 
@@ -27,7 +27,7 @@ const Display = (props) => {
   switch (template) {
     //Articles
     case "ATN":
-      templateString = ATN(props); 
+      templateString = ATN(props);
       break;
     case "OTR":
       templateString = OTR(props);
@@ -41,7 +41,7 @@ const Display = (props) => {
     case "WIA":
       templateString = WIA(props);
       break;
-//Featured Articles
+    //Featured Articles
     case "ATN_Featured":
       templateString = ATN_Featured(props);
       break;
@@ -60,7 +60,7 @@ const Display = (props) => {
   }
 
   let stringed = templateString.toString();
-  console.log("template", template);
+  // console.log("template", template);
   function handleCopyClick() {
     /* Save value of myText to input variable */
     var input = stringed;
