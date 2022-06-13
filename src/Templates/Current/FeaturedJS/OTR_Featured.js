@@ -102,7 +102,7 @@ const OTR_Featured = (props) => {
 				<div align="center" style="border-top:1px dashed black;">&nbsp;</div>
         		<!--START - OFFER 1-->
 				<h1 style="margin-top:0em; margin-bottom:1em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ad1.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ad1.Head}</a>&nbsp; <span style="font-weight:normal; font-size:8pt; line-height: 10pt; letter-spacing: normal;">[SPONSORED]</span></h1>
-        		<p style="margin-top:0em; margin-bottom:1em;">${props.ad1.Bod}<a href="${props.ad1.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad1.Call}</a></p>
+        		<p style="margin-top:0em; margin-bottom:1em;"> ${props.ad1.Bod} <a href="${props.ad1.URL}" style="font-weight:bold; color:#00a651;" target="_blank"> ${props.ad1.Call} </a></p>
         		<!--END - OFFER 1-->
 				<div align="center" style="border-top:1px dashed black;">&nbsp;</div>
 
@@ -120,7 +120,7 @@ const OTR_Featured = (props) => {
 
 				
 				<h1 style="margin-top:0em; margin-bottom:1em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ad2.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ad2.Head}</a>&nbsp; <span style="font-weight:normal; font-size:8pt; line-height: 10pt; letter-spacing: normal;">[SPONSORED]</span></h1>
-        		<p style="margin-top:0em; margin-bottom:1em;">${props.ad2.Bod}<a href="${props.ad2.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad2.Call}</a></p>					
+        		<p style="margin-top:0em; margin-bottom:1em;"> ${props.ad2.Bod} <a href="${props.ad2.URL}" style="font-weight:bold; color:#00a651;" target="_blank"> ${props.ad2.Call} </a></p>					
 						
 
 				  <h1 style="margin-top:0; margin-bottom:1em; font-size:9pt; line-height:15pt; font-weight:bold; letter-spacing:-0.02em; text-align: left">Be sure that you receive future email from Options Trading Report &ndash; please <a href="https://optionstradingreport.com/otr-whitelist.html" style="font-weight:bold; color:#00a651;" target="_blank">whitelist our email address</a> with your email provider. </h1>

@@ -64,7 +64,9 @@ function App() {
     handleAd(formInputData.Ad2, setAd2);
     handleAd(formInputData.Ad3, setAd3);
 
-    setFeatured_Text(formInputData.Featured_Text);
+    let TitleCasedFText = titleCase(formInputData.Featured_Text);
+
+    setFeatured_Text(TitleCasedFText);
     setFeatured_URL(formInputData.Featured_URL);
     setNewsletter(formInputData.Newsletter);
   };
@@ -84,13 +86,19 @@ function App() {
       bodArray[i] = $(e).text();
     });
 
+    // newBodArray.splice(0, 1);
+
     bodArray.splice(0, 2);
+
+    console.log("bodArray: ", bodArray);
+
+    // console.log("newbODaRRAY", newBodArray);
+
     let bodString = bodArray.join("");
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
-    // //console.log("bodArray: ", bodArray);
-    // //console.log("bodString:   ", bodString);
+    console.log("bodString:   ", bodString);
 
     let bodyObj = { bodString, bodArray };
     return bodyObj;
@@ -105,13 +113,16 @@ function App() {
     $(pTags).each(function (i, e) {
       bodArray[i] = $(e).text();
     });
+    // let newBodArray = bodArray.splice(0, 1);
 
     bodArray.splice(0, 2);
     let bodString = bodArray.join("");
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
-    // //console.log("bodArray: ", bodArray);
+    console.log("bodArray: ", bodArray);
+
+    // console.log("newbODaRRAY", newBodArray);
     // //console.log("bodString:   ", bodString);
 
     let bodyObj = { bodString, bodArray };
@@ -137,15 +148,15 @@ function App() {
           let body = bodyObj.bodString;
           let bodyArray = bodyObj.bodArray;
 
-          let bodPar1 = bodyArray.slice(0, 3).join("");
+          let bodPar1 = bodyArray.slice(0, 2).join(" ");
 
-          let bodPar2 = bodyArray.slice(3, 6).join("");
+          let bodPar2 = bodyArray.slice(2, 4).join(" ");
 
-          let bodPar3 = bodyArray.slice(6, 9).join("");
+          let bodPar3 = bodyArray.slice(4, 6).join(" ");
 
-          let bodPar4 = bodyArray.slice(9, 12).join("");
+          let bodPar4 = bodyArray.slice(6, 8).join(" ");
 
-          //console.log("bodyArrays", bodPar1, bodPar2, bodPar3, bodPar4);
+          console.log("bodyArrays", bodPar1, bodPar2, bodPar3, bodPar4);
 
           $(".site-content").each((index, element) => {
             let url = ArInput;
@@ -176,15 +187,15 @@ function App() {
           let bodyObj = cutBodyPTR(response);
           let body = bodyObj.bodString;
           let bodyArray = bodyObj.bodArray;
-          let bodPar1 = bodyArray.slice(0, 3).join("");
+          let bodPar1 = bodyArray.slice(0, 2).join("");
 
-          let bodPar2 = bodyArray.slice(3, 6).join("");
+          let bodPar2 = bodyArray.slice(2, 4).join("");
 
-          let bodPar3 = bodyArray.slice(6, 9).join("");
+          let bodPar3 = bodyArray.slice(4, 6).join("");
 
-          let bodPar4 = bodyArray.slice(9, 12).join("");
+          let bodPar4 = bodyArray.slice(6, 8).join("");
 
-          //console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
+          console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
           $(".single_post").each((index, element) => {
             let url = ArInput;
             let title = $(element).find(".title").text();
@@ -215,15 +226,15 @@ function App() {
           let body = bodyObj.bodString;
           let bodyArray = bodyObj.bodArray;
 
-          let bodPar1 = bodyArray.slice(0, 3).join("");
+          let bodPar1 = bodyArray.slice(0, 2).join("");
 
-          let bodPar2 = bodyArray.slice(3, 6).join("");
+          let bodPar2 = bodyArray.slice(2, 4).join("");
 
-          let bodPar3 = bodyArray.slice(6, 9).join("");
+          let bodPar3 = bodyArray.slice(4, 6).join("");
 
-          let bodPar4 = bodyArray.slice(9, 12).join("");
+          let bodPar4 = bodyArray.slice(6, 8).join("");
 
-          //console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
+          console.log("bodyArray", bodPar1, bodPar2, bodPar3, bodPar4);
 
           $(".site-content").each((index, element) => {
             let url = ArInput;

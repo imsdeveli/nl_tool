@@ -129,13 +129,13 @@ const ATN_Featured = (props) => {
 											<div align="center" style="border-top:1px dotted #C1D82F;">&nbsp;</div>
 
 											<p style="margin-top:0em; margin-bottom:1em; text-align: center;"
-												align="center"><a href="${props.ad1.URL}" style="" target="_blank
-													style="font-weight:bold; text-decoration: none; color: #000000;"
+												align="center"><a href="${props.ad1.URL}"
+													style="font-weight:bold; text-decoration: underline; color: #196767;"
 													target="_blank">${props.ad1.Head}</a> <span
 													style="color:#000000; font-weight:normal; font-size:10px; line-height:12px;">[ad]</span><br>
-												${props.ad1.Bod}&nbsp;<a href="${props.ad1.URL}"
+												 ${props.ad1.Bod} &nbsp;<a href="${props.ad1.URL}"
 													style="text-decoration:underline; font-weight: bold; color: #196767;"
-													target="_blank">${props.ad1.Call}</a></p>
+													target="_blank">${props.ad1.Call} </a></p>
 
 											<div align="center" style="border-top:1px dotted #C1D82F;">&nbsp;</div>
 
@@ -158,13 +158,13 @@ const ATN_Featured = (props) => {
 											<div align="center" style="border-top:1px dotted #C1D82F;">&nbsp;</div>
 
 											<p style="margin-top:0em; margin-bottom:1em; text-align: center;"
-												align="center"><a href="${props.ad2.URL}" style="" target="_blank
-													style="font-weight:bold; text-decoration: none; color: #000000;"
-													target="_blank">${props.ad2.Head}</a> <span
+												align="center"><a href="${props.ad2.URL}"
+												style="font-weight:bold; text-decoration: underline; color: #196767;"
+												target="_blank">${props.ad2.Head}</a><span
 													style="color:#000000; font-weight:normal; font-size:10px; line-height:12px;">[ad]</span><br>
-												${props.ad2.Bod}&nbsp;<a href="${props.ad2.URL}"
+												${props.ad2.Bod} &nbsp;<a href="${props.ad2.URL}"
 													style="text-decoration:underline; font-weight: bold; color: #196767;"
-													target="_blank">${props.ad2.Call}</a></p>
+													target="_blank">${props.ad2.Call} </a></p>
 
 											<br><br>
 											<h1

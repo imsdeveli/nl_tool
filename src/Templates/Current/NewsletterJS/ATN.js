@@ -113,11 +113,11 @@ const ATN = (props) => {
 							
 							<h1 style="margin-top:1em; margin-bottom:1em; font-size:16pt; line-height:20pt; font-weight:bold; letter-spacing:-0.02em;"><a href="https://protradingresearch.com/" style="font-weight:bold; text-decoration: none; color: #363636; font-style:italic;" target="_blank">Sponsored Content</a>&nbsp;</h1>
 							
-									<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=286&aff_id=1671&eid=MKT627590&externalchannel=atn-email-relcont&aff_sub=atn-email-relcont-lift5" style="font-weight:bold; text-decoration: underline; color: #196767;" target="_blank">$150 Trillion | Transformation of US | Bezos/Musk</a></p>			
+									<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=289&aff_id=1671&eid=MKT641560&externalchannel=atn-email-relcont&aff_sub=atn-relcont-nl-lift1" style="font-weight:bold; text-decoration: underline; color: #196767;" target="_blank">3-Second Bitcoin Move</a></p>			
 											
-									<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=261&aff_id=1671&eid=MKT603628&externalchannel=atn-email-relcont&aff_sub=atn-relcont-nl-lift3" style="font-weight:bold; text-decoration: underline; color: #196767;" target="_blank">Biggest Investing Shift in 400 Years Could Be Days Away</a></p>
+									<p style="margin-bottom:1em;"><a href="https://www.c7bwtrk.com/5KCWZ2/24X9WZ/?source_id=relcont&sub1=atn&sub2=2030&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #196767;" target="_blank">A View From 2030? Watch This Now or Get Left Behind…</a></p>
 							
-							<p style="margin-bottom:1em;"><a href="https://www.c7bwtrk.com/5KCWZ2/293Z4R/?source_id=relcont&sub1=atn&sub2=revealed&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #196767;" target="_blank">Bezos' NEXT Big Project Revealed! One that could disrupt a $1.32 trillion industry...</a></p>
+							<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=291&aff_id=1671&eid=MKT641532&externalchannel=atn-email-relcont&aff_sub=atn-relcont-nl-lift5" style="font-weight:bold; text-decoration: underline; color: #196767;" target="_blank">The #1 Fuel Stock Set to Surge (Less than $20)</a></p>
 							
 							<br><br>
 						

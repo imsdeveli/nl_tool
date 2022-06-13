@@ -108,13 +108,24 @@ const WIA = (props) => {
 						
 					<p style="margin-bottom:1em; font-size:18px; font-weight: bold;">Sponsored Content:</p>
 						
-					<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=286&aff_id=1828&eid=MKT627578&aff_sub=wia-relcont-nl-lift6" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">Confession: PhD Economist says "Used to think a crash was coming..."</a></p>
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+
+					<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=291&aff_id=1828&eid=MKT641504&externalchannel=wia-email-relcont&aff_sub=wia-relcont-nl-lift2" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">	1st Gas Station in America to No-Longer Offer Gas"</a></p>
 						
-					<p style="margin-bottom:1em;"><a href="http://trk.stockinvestor.com/click.track?CID=442593&AFID=513228&ADID=2536205&SID=relcont,wia,sow1,nl" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">Spare 3 minutes a week and retire earlier. Click here to view my presentation, now.</a></p>
+					<p style="margin-bottom:1em;"><a href="https://www.behindthemarkets-btm.com/4RQSJ/9B9DM/?source_id=relcont&sub1=wia&sub2=bde_buyalert&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">Goldman Sachs, Morgan Stanley, and Evercore ISI All Have a "BUY" Rating on This Small Cap Stock. Details Here.</a></p>
 						
-							<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=280&aff_id=1828&eid=MKT619589&externalchannel=wia-email-relcont&aff_sub=wia-relcont-nl-lift1v2" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">Millionaire Trader Drops Bombshell... "The ONLY Trade You Need"</a></p>
+							<p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=289&aff_id=1828&eid=MKT641557&externalchannel=wia-email-relcont&aff_sub=wia-relcont-nl-lift6" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">Florida Man Leaves Crypto Crowd Speechless</a></p>
 						
-					<p style="margin-bottom:1em;"><a href="https://www.c7bwtrk.com/6XHPCD/24X9WZ/?source_id=relcont&sub1=wia&sub2=2030&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">A View From 2030? Watch this now or get left behind...</a></p>
+					<p style="margin-bottom:1em;"><a href="https://www.behindthemarkets-btm.com/4RQSJ/KMKS9/?source_id=relcont&sub1=wia&sub2=accurate&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #00BAFF;" target="_blank">"Most Accurate Advisor Ever" Predicts July Crash. Get the Details Here.</a></p>
 						
 					<br><br>
 						
@@ -122,6 +133,7 @@ const WIA = (props) => {
 				
 						</td>
 				</tr>
+				<tr>
 				<tr>
 					<td align="left" valign="top" style="padding:10px 5px 10px 5px; font-family: Arial, sans-serif; font-size: 10px; line-height: 12px;  color: #000000;">
 						<p style="margin-bottom:1em;">DISCLAIMER: This communication includes advertising material and PAID ADVERTISEMENTS provided to our customers. Stocks and options trading have large potential rewards, but also large potential risk. You must be aware of the risks and be willing to accept them in order to invest in the stocks and options markets. Don't trade with money you can't afford to lose. This is neither a solicitation nor an offer to Buy/Sell stocks or options. No representation is being made that any account will or is likely to achieve profits or losses similar to those discussed in this report. The past performance of any trading system or methodology is not necessarily indicative of future results. All trades, patterns, charts, systems, etc., discussed in this report are for illustrative purposes only and not to be construed as specific advisory recommendations. Information contained in this correspondence is intended for informational purposes only and was obtained from sources believed to be reliable. Information is in no way guaranteed. No guarantee of any kind is implied or possible where projections of future conditions are attempted. For full disclaimer information, go <a href="https://weeklyinvestoralerts.com/legal/email-disclaimer/" target="_blank" style="color: #00BAFF;">here</a>.</p>
@@ -167,6 +179,7 @@ const WIA = (props) => {
 						
 						<p style="margin-bottom:1em; text-align: center;" align="center"><a class="unsub" href="{{{unsubscribe}}}" target="_blank" style="color: #00BAFF; text-decoration:underline;">UNSUBSCRIBE HERE</a></p>				  
 					</td>
+					</tr>			  
 					</tr>			  		  
 				<!--END - HEADING WITH TEXT--> 
 				</table>

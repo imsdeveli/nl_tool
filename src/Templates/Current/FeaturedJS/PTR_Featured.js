@@ -96,7 +96,7 @@ const PTR_Featured = (props) => {
           <div align="center" style="border-top:1px dotted black;">&nbsp;</div>  
           <p style="margin-top:0em; margin-bottom:1em; font-size:16pt; line-height:20pt; font-weight:bold; letter-spacing:-0.02em;"><a href="${props.ad1.URL}" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">${props.ad1.Head}</a>&nbsp;<span style="font-size:10pt; line-height:12pt; font-weight:normal;">[sponsor]</span></h1>
           
-          <p style="margin-bottom:1em;">${props.ad1.Bod}<a href="${props.ad1.URL}" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">${props.ad1.Call}</a></p>					  
+          <p style="margin-bottom:1em;"> ${props.ad1.Bod} <a href="${props.ad1.URL}" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;"> ${props.ad1.Call} </a></p>					  
             
           <div align="center" style="border-top:1px dotted black;">&nbsp;</div>
           
@@ -109,7 +109,7 @@ const PTR_Featured = (props) => {
           <div align="center" style="border-top:1px dotted black;">&nbsp;</div>  
           <p style="margin-top:0em; margin-bottom:1em; font-size:16pt; line-height:20pt; font-weight:bold; letter-spacing:-0.02em;"><a href="${props.ad2.URL}" style="font-weight:bold; text-decoration: none; color: #363636;" target="_blank">${props.ad2.Head}</a>&nbsp;<span style="font-size:10pt; line-height:12pt; font-weight:normal;">[sponsor]</span></h1>
           
-            <p style="margin-bottom:1em;">${props.ad2.Bod}<a href="${props.ad2.URL}" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;">${props.ad2.Call}</a></p>					  
+            <p style="margin-bottom:1em;"> ${props.ad2.Bod} <a href="${props.ad2.URL}" target="_blank" style="font-weight:bold; color:#22af60; text-decoration: underline;"> ${props.ad2.Call} </a></p>					  
             
             <div align="center" style="border-top:2px solid black;">&nbsp;</div>				  
             </td>

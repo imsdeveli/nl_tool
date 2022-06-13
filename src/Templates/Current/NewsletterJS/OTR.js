@@ -91,34 +91,34 @@ const OTR = (props) => {
 	
 					<!--START - ARTICLE ONE-->
 					<h1 style="margin-top:1em; margin-bottom:0em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ar1.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ar1.Head}</a></h1>
-							<p style="margin-top:0em; margin-bottom:1em;">${props.ar1.Bod}<a href="${props.ar1.URL}" style="font-weight:bold; color:#00a651;" target="_blank">Full Article...</a></p>
+							<p style="margin-top:0em; margin-bottom:1em;">${props.ar1.Bod} <a href="${props.ar1.URL}" style="font-weight:bold; color:#00a651;" target="_blank">Full Article...</a></p>
 							<!--END - ARTICLE ONE-->
 						
 							<!--START - OFFER 1-->
 					<h1 style="margin-top:1em; margin-bottom:0em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ad1.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ad1.Head}</a>&nbsp; <span style="font-weight:normal; font-size:8pt; line-height: 10pt; letter-spacing: normal;">[SPONSORED CONTENT]</span></h1>
-							<p style="margin-top:0em; margin-bottom:1em;">${props.ad1.Bod}<a href="${props.ad1.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad1.Call}</a></p>
+							<p style="margin-top:0em; margin-bottom:1em;">${props.ad1.Bod} <a href="${props.ad1.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad1.Call}</a></p>
 							<!--END - OFFER 1-->
 	
 							<!--START - ARTICLE TWO-->
 							<h1 style="margin-top:1em; margin-bottom:0em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ar2.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ar2.Head}</a></h1>
-							<p style="margin-top:0em; margin-bottom:1em;">${props.ar2.Bod}<a href="${props.ar2.URL}" style="font-weight:bold; color:#00a651;" target="_blank">Full Article...</a></p>
+							<p style="margin-top:0em; margin-bottom:1em;">${props.ar2.Bod} <a href="${props.ar2.URL}" style="font-weight:bold; color:#00a651;" target="_blank">Full Article...</a></p>
 							<!--END - ARTICLE TWO-->
 	
 				
 							<!--START - OFFER 2-->
 							<h1 style="margin-top:1em; margin-bottom:0em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ad2.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ad2.Head}</a>&nbsp; <span style="font-weight:normal; font-size:8pt; line-height: 10pt; letter-spacing: normal;">[SPONSORED CONTENT]</span></h1>
-							<p style="margin-top:0em; margin-bottom:1em;">${props.ad2.Bod}<a href="${props.ad2.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad2.Call}</a></p>
+							<p style="margin-top:0em; margin-bottom:1em;">${props.ad2.Bod} <a href="${props.ad2.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad2.Call}</a></p>
 							<!--END - OFFER 2-->				  
 						
 							<!--START - ARTICLE THREE-->
 							<h1 style="margin-top:1em; margin-bottom:0em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ar3.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ar3.Head}</a></h1>
-							<p style="margin-top:0em; margin-bottom:1em;">${props.ar3.Bod}<a href="${props.ar3.URL}" style="font-weight:bold; color:#00a651;" target="_blank">Full Article...</a></p>
+							<p style="margin-top:0em; margin-bottom:1em;">${props.ar3.Bod} <a href="${props.ar3.URL}" style="font-weight:bold; color:#00a651;" target="_blank">Full Article...</a></p>
 							<!--END - ARTICLE THREE-->
 						
 						
 							<!--START - OFFER 3-->
 							<h1 style="margin-top:1em; margin-bottom:0em; font-weight:bold; font-size: 16pt; line-height:20pt;"><a href="${props.ad3.URL}" style="font-weight: bold; text-decoration:none; color:#00a651;" target="_blank">${props.ad3.Head}</a>&nbsp; <span style="font-weight:normal; font-size:8pt; line-height: 10pt; letter-spacing: normal;">[SPONSORED CONTENT]</span></h1>
-							<p style="margin-top:0em; margin-bottom:1em;">${props.ad3.Bod}<a href="${props.ad3.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad3.Call}</a></p>
+							<p style="margin-top:0em; margin-bottom:1em;">${props.ad3.Bod} <a href="${props.ad3.URL}" style="font-weight:bold; color:#00a651;" target="_blank">${props.ad3.Call}</a></p>
 							<!--END - OFFER 3-->	
 
 
@@ -129,11 +129,12 @@ const OTR = (props) => {
 					
 							<!--START - RELATED CONTENT OFFERS-->
 						
-					<p style="margin-bottom:1em;"><a href="http://trk.stockinvestor.com/click.track?CID=442352&AFID=513227&ADID=2534940&SID=relcont,otr,9month1,nl" style="text-decoration: none; color:#00a651; font-weight:bold;" target="_blank">Want a 7-Figure Retirement Account in 2022? Legendary trader Bryan Perry's going to show you how you can get it.</a></p>
+					<p style="margin-bottom:1em;"><a href="https://mqmetrics.com/t/opttrdreport~newsletter~beginoptions~20220203" style="text-decoration: none; color:#00a651; font-weight:bold;" target="_blank">Get Your FREE Beginner Options Guide Before the Link Expires…</a></p>
 						
-					<p style="margin-bottom:1em;"><a href="https://mqmetrics.com/t/opttrdreport~newsletter~beginoptions~20220203" style="text-decoration: none; color:#00a651; font-weight:bold;" target="_blank">The Options for New Traders Were Slim &ndash; Until Today!</a></p>
+					<p style="margin-bottom:1em;"><a href="https://www.sovuy1u2jk.com/262DXM/3QQG7/?source_id=relcont&sub1=otr&sub2=legend&sub3=nl" style="text-decoration: none; color:#00a651; font-weight:bold;" target="_blank">Wall Street Legend Predicts this "Forever Battery" Will Cause a 1,500% Surge in EV Sales Over the Next 4 Years.</a></p>
 						
-						<p style="margin-bottom:1em;"><a href="https://mqmetrics.com/t/opttrdreport~newsletter~retireguide~20220203" style="text-decoration: none; color:#00a651; font-weight:bold;" target="_blank">Retirement Might Be Closer Than You Thought!</a></p>
+						<p style="margin-bottom:1em;"><a href="https://www.behindthemarkets-btm.com/49R9R2/9B9DM/?source_id=relcont&sub1=otr&sub2=bde_cramer1&sub3=nl" style="text-decoration: none; color:#00a651; font-weight:bold;" target="_blank">Jim Cramer Says This Could Be "The Biggest Drug Ever." Our Research Shows That Anyone Who Gets In Today Could See a Return of 113,548%.
+						</a></p>
 	
 					
 						<br><br>

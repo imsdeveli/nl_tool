@@ -171,11 +171,11 @@ const TCI = (props) => {
 		  		<table role="presentation" style="width:100%; border:none; border-spacing:0; text-align:left; font-family:Arial,sans-serif; font-size:16px; line-height:18pt; color:#363636; background-color: #FFFFFF;" bgcolor="#FFFFFF">			
   				  <tr>
 			  		<td style="padding:10px; background-color:#ffffff;"> 
-					  <p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=276&aff_id=1828&eid=MKT610162&externalchannel=tci-email-relcont&aff_sub=tci-relcont-nl-expertpredicts" style="font-weight:bold; text-decoration: underline; color: #FF9933;" target="_blank">Expert Predicts Major Money Overhaul in 2022</a></p>
+					  <p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=291&aff_id=1671&eid=MKT641532&externalchannel=tci-email-relcont&aff_sub=tci-relcont-nl-lift7" style="font-weight:bold; text-decoration: underline; color: #FF9933;" target="_blank">Imminent Gas Station Rush – Up to 500,000 Stations</a></p>
 				  
-        			  <p style="margin-bottom:1em;"><a href="https://tracking.legacyoffers.com/aff_c?offer_id=286&aff_id=1671&eid=MKT627590&externalchannel=tci-email-relcont&aff_sub=tci-relcont-nl-lift3" style="font-weight:bold; text-decoration: underline; color: #FF9933;" target="_blank">Former Goldman Sachs Exec: "America's problems explained in ONE chart"</a></p>
+        			  <p style="margin-bottom:1em;"><a href="https://www.sovuy1u2jk.com/ZZ2GX/3QQG7/?source_id=relcont&sub1=tci&sub2=obsolete&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #FF9933;" target="_blank">The Forever Battery: Making Gas Cars Obsolete"</a></p>
 						
-        			  <p style="margin-bottom:1em;"><a href="https://www.c7bwtrk.com/5KCWZ2/23JF6C/?source_id=relcont&sub1=tci&sub2=shatter&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #FF9933;" target="_blank">Could Apple's iPhone Killer Shatter Zuck's Metaverse? Click for the Urgent Details.</a></p>						
+        			  <p style="margin-bottom:1em;"><a href="https://www.behindthemarkets-btm.com/3J67C/9B9DM/?source_id=relcont&sub1=tci&sub2=bde_cramer1&sub3=nl" style="font-weight:bold; text-decoration: underline; color: #FF9933;" target="_blank">Jim Cramer Says This Could Be "The Biggest Drug Ever." Our Research Shows That Anyone Who Gets In Today Could See a Return of 113,548%.</a></p>						
 						<br><br>
 				  
 				  
