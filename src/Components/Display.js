@@ -14,7 +14,7 @@ import "../scrollBox.css";
 import Preview from "./Preview";
 
 const Display = (props) => {
-  // console.log("display Props", props);
+  console.log("display Props", props);
 
   let template = props.Newsletter;
 

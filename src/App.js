@@ -64,16 +64,31 @@ function App() {
     handleAd(formInputData.Ad2, setAd2);
     handleAd(formInputData.Ad3, setAd3);
 
-    let TitleCasedFText = titleCase(formInputData.Featured_Text);
+    // let TitleCasedFText = titleCase(formInputData.Featured_Text);
 
-    setFeatured_Text(TitleCasedFText);
+    // setFeatured_Text(TitleCasedFText);
+
+    HandleFeatured_Text(formInputData.Featured_Text);
     setFeatured_URL(formInputData.Featured_URL);
     setNewsletter(formInputData.Newsletter);
   };
+
+  const HandleFeatured_Text = (inputData) => {
+    if (inputData !== undefined) {
+      let featuredT = `${inputData}`;
+      featuredT = titleCase(featuredT);
+      setFeatured_Text(featuredT);
+      console.log("Featured_T", featuredT);
+    }
+  };
   useEffect(() => {
     GetParseAndUpdate(formInputData);
-    // compareData(formInputData);
   }, [formInputData]);
+
+  // useEffect(() => {
+  //   if (Featured_Text !== "") {
+  //   }
+  // }, [Featured_Text]);
 
   const cutBody = (response) => {
     let $ = cheerio.load(response.data);
