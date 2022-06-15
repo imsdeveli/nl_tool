@@ -55,7 +55,8 @@ function App() {
   //     //call update function to set(key.input === formInputData[key])
   //   });
   // };
-  const GetParseAndUpdate = (formInputData) => {
+
+  const regularCall = (formInputData) => {
     handleArticle(formInputData.Ar1, setAr1);
     handleArticle(formInputData.Ar2, setAr2);
     handleArticle(formInputData.Ar3, setAr3);
@@ -64,13 +65,27 @@ function App() {
     handleAd(formInputData.Ad2, setAd2);
     handleAd(formInputData.Ad3, setAd3);
 
-    // let TitleCasedFText = titleCase(formInputData.Featured_Text);
+    setNewsletter(formInputData.Newsletter);
+  };
 
-    // setFeatured_Text(TitleCasedFText);
+  const featuredCall = (formInputData) => {
+    handleFeaturedArticle(formInputData.Ar1, setAr1);
+    handleAd(formInputData.Ad1, setAd1);
+    handleAd(formInputData.Ad2, setAd2);
 
     HandleFeatured_Text(formInputData.Featured_Text);
     setFeatured_URL(formInputData.Featured_URL);
     setNewsletter(formInputData.Newsletter);
+  };
+
+  const GetParseAndUpdate = (formInputData) => {
+    let text = `${formInputData.Newsletter}`;
+
+    if (text.includes("_Featured")) {
+      featuredCall(formInputData);
+    } else {
+      regularCall(formInputData);
+    }
   };
 
   const HandleFeatured_Text = (inputData) => {
@@ -101,21 +116,18 @@ function App() {
       bodArray[i] = $(e).text();
     });
 
-    // newBodArray.splice(0, 1);
+    let fBodArray = bodArray.concat();
 
     bodArray.splice(0, 2);
-
-    console.log("bodArray: ", bodArray);
-
-    // console.log("newbODaRRAY", newBodArray);
-
     let bodString = bodArray.join("");
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
+    console.log("fBodArray: ", fBodArray);
     console.log("bodString:   ", bodString);
+    console.log("bodArray: ", bodArray);
 
-    let bodyObj = { bodString, bodArray };
+    let bodyObj = { bodString, bodArray, fBodArray };
     return bodyObj;
   };
   const cutBodyPTR = (response) => {
@@ -128,20 +140,178 @@ function App() {
     $(pTags).each(function (i, e) {
       bodArray[i] = $(e).text();
     });
-    // let newBodArray = bodArray.splice(0, 1);
+    let fBodArray = bodArray.concat();
 
     bodArray.splice(0, 2);
     let bodString = bodArray.join("");
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
+    console.log("fBodArray: ", fBodArray);
+    console.log("bodString:   ", bodString);
     console.log("bodArray: ", bodArray);
 
-    // console.log("newbODaRRAY", newBodArray);
-    // //console.log("bodString:   ", bodString);
-
-    let bodyObj = { bodString, bodArray };
+    let bodyObj = { bodString, bodArray, fBodArray };
     return bodyObj;
+  };
+
+  const handleFeaturedArticle = (ArInput, arNum) => {
+    //console.log("ArInput:", ArInput);
+    //console.log("ArNum:", arNum);
+
+    const theUrl = `${ArInput}`;
+    const theHeaders = { "Access-Control-Allow-Origin": "*" };
+
+    if (
+      theUrl.includes("thecheapinvestor") ||
+      theUrl.includes("activetradernews")
+    ) {
+      axios
+        .get(theUrl, theHeaders)
+        .then((response) => {
+          let $ = cheerio.load(response.data);
+          let bodyObj = cutBody(response);
+          let body = bodyObj.bodString;
+          let bodyArray = bodyObj.fBodArray;
+
+          let bodPar1 = bodyArray.slice(0, 2).join(" ");
+
+          let bodPar2 = bodyArray.slice(2, 4).join(" ");
+
+          let bodPar3 = bodyArray.slice(4, 6).join(" ");
+
+          let bodPar4 = bodyArray.slice(6, 8).join(" ");
+
+          console.log(
+            "Featured Arrays      par1:",
+            bodPar1,
+            "par2:",
+            bodPar2,
+            "par3:",
+            bodPar3,
+            "par4:",
+            bodPar4
+          );
+          $(".site-content").each((index, element) => {
+            let url = ArInput;
+            let title = $(element).find(".page-title").text();
+            title = titleCase(title);
+
+            arNum({
+              input: ArInput,
+              URL: url,
+              Head: title,
+              Bod: body,
+              Par1: bodPar1,
+              Par2: bodPar2,
+              Par3: bodPar3,
+              Par4: bodPar4
+            });
+            //console.log("TheCheapInvestor URL:", url);
+            //console.log("TheCheapInvestor title:", title);
+            //console.log("TheCheapInvestor body:", body);
+          });
+        })
+        .catch((error) => console.log("error", error));
+    } else if (theUrl.includes("protradingresearch")) {
+      axios
+        .get(theUrl, theHeaders)
+        .then((response) => {
+          let $ = cheerio.load(response.data);
+          let bodyObj = cutBodyPTR(response);
+          let body = bodyObj.bodString;
+          let bodyArray = bodyObj.fBodArray;
+
+          let bodPar1 = bodyArray.slice(0, 2).join(" ");
+
+          let bodPar2 = bodyArray.slice(2, 4).join(" ");
+
+          let bodPar3 = bodyArray.slice(4, 6).join(" ");
+
+          let bodPar4 = bodyArray.slice(6, 8).join(" ");
+
+          console.log(
+            "Featured Arrays      par1:",
+            bodPar1,
+            "par2:",
+            bodPar2,
+            "par3:",
+            bodPar3,
+            "par4:",
+            bodPar4
+          );
+
+          $(".single_post").each((index, element) => {
+            let url = ArInput;
+            let title = $(element).find(".title").text();
+            title = titleCase(title);
+
+            arNum({
+              input: ArInput,
+              URL: url,
+              Head: title,
+              Bod: body,
+              Par1: bodPar1,
+              Par2: bodPar2,
+              Par3: bodPar3,
+              Par4: bodPar4
+            });
+            //console.log("PTR URL:", url);
+            //console.log("PTR title:", title);
+            //console.log("PTR body:", body);
+          });
+        })
+        .catch((error) => console.log("error", error));
+    } else if (theUrl.includes("optionstradingreport")) {
+      axios
+        .get(theUrl, theHeaders)
+        .then((response) => {
+          let $ = cheerio.load(response.data);
+          let bodyObj = cutBody(response);
+          let body = bodyObj.bodString;
+          let bodyArray = bodyObj.fBodArray;
+
+          let bodPar1 = bodyArray.slice(0, 2).join(" ");
+
+          let bodPar2 = bodyArray.slice(2, 4).join(" ");
+
+          let bodPar3 = bodyArray.slice(4, 6).join(" ");
+
+          let bodPar4 = bodyArray.slice(6, 8).join(" ");
+
+          console.log(
+            "Featured Arrays      par1:",
+            bodPar1,
+            "par2:",
+            bodPar2,
+            "par3:",
+            bodPar3,
+            "par4:",
+            bodPar4
+          );
+          $(".site-content").each((index, element) => {
+            let url = ArInput;
+            let title = $(element).find(".entry-title").text();
+            title = titleCase(title);
+
+            arNum({
+              input: ArInput,
+              URL: url,
+              Head: title,
+              Bod: body,
+              Par1: bodPar1,
+              Par2: bodPar2,
+              Par3: bodPar3,
+              Par4: bodPar4
+            });
+            //console.log("OTR URL:", url);
+            //console.log("OTR title:", title);
+            //console.log("OTR body:", body);
+          });
+        })
+        .catch((error) => console.log("error", error));
+    }
+    return;
   };
 
   const handleArticle = (ArInput, arNum) => {
