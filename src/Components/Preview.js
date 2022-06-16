@@ -3,9 +3,11 @@ const Preview = (props) => {
   // console.log("htmltorender:", htmlToRender);
   return (
     <div className="Preview">
-      <h2> Preview </h2>
-
-      <div dangerouslySetInnerHTML={{ __html: htmlToRender }}></div>
+      <div
+        class="card mb-4 scroll-box"
+        style={{ height: "66vh" }}
+        dangerouslySetInnerHTML={{ __html: htmlToRender }}
+      ></div>
     </div>
   );
 };

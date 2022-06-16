@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import React, { useEffect, useState } from "react";
 import Form from "./Components/Form.js";
 
@@ -523,33 +523,86 @@ function App() {
   return (
     <div class="App">
       <div
-        class="container-fluid p-4"
+        class="container-fluid p-3"
         style={{ "background-color": "#000000" }}
       >
-        <div class="row">
+        <div class="row" style={{ display: "flex" }}>
           {" "}
-          <div>
+          <div class="col">
             <img
               src="https://images.squarespace-cdn.com/content/v1/5e53f316f98ebd7769247a4e/1582563554920-AHCM2PZC0D0IHBGXZ3WV/logo1.png"
               style={{ maxWidth: "200px" }}
               alt=""
             />{" "}
           </div>
+          <div class="col" style={{ textAlign: "right" }}>
+            <h3>Newsletter Builder</h3>
+          </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid p-2">
         <div class="row">
-          <div class="col-3 p-4">
-            <h2>Newsletter Builder</h2>
-            <p class="small">
-              First select the email template you'd like to use, and then fill
-              in each respective field. For articles, input the full article
-              URL. For advertisements, insert the code snippet given by
-              HasOffers
+          <div class="col m-1">
+            <p>
+              <b>
+                First select the email template you'd like to use, and then fill
+                in each respective field. For articles, input the full article
+                URL. For advertisements, insert the code snippet given by
+                HasOffers. For Featured URL, insert the URL you want the
+                Featured Text to link to. For Featured Text, Type the words you
+                would like on Display at the top of your Featured Newsletter.
+              </b>{" "}
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <h3>Input Form</h3>
+
+            <div class="row">
+              <div class="col">
+                <p class="small">
+                  <>
+                    <b>Regular Newsletters:</b>
+                  </>{" "}
+                  Select Newsletter Acronym from Template dropdown Box and input
+                  desired values in the "Article 1", "Article 2", "Article 3",
+                  "Ad 1", "Ad 2", and "Ad 3" fields
+                </p>
+              </div>
+              <div class="col">
+                <p class="small">
+                  <>
+                    <b>Featured Newsletters:</b>
+                  </>{" "}
+                  Select Featured version of your Newsletter from Template
+                  dropdown Box and input desired values in the "Article 1", "Ad
+                  1", "Ad 2", "Featured URL", and "Featured_Text" fields
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-grid">
+              <h3>HTML</h3>
+              <p class="small">
+                Once you've completed the form and hit the Submit Button, The
+                box below will automatically display the HTML updated with your
+                input. Each time you Submit changes to the form, the HTML will
+                change accordingly.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <h3>Preview</h3>
+            <p class="small">A Live Preview of your Newsletter</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 p-4">
             <Form setFormInputData={setFormInputData} />
           </div>
-          <div class="col-9 p-4">
+          <div class="col-8 p-4">
             <Display
               ar1={Ar1}
               ar2={Ar2}

@@ -76,18 +76,7 @@ const Display = (props) => {
     <div className="Display">
       <div class="row">
         <div class="col-6">
-          <div class="d-grid gap-2 mb-4">
-            <h2>HTML</h2>
-            <p class="small">
-              Once you've completed the form and saved, use the button below to
-              generate your HTML. Each time you make changes to the form you'll
-              need to re-generate HTML.
-            </p>
-            <button class="btn btn-success" onClick={props.pullData}>
-              Generate HTML
-            </button>
-          </div>
-          <div class="card mb-4 scroll-box">
+          <div class="card mb-4 scroll-box" style={{ height: "58vh" }}>
             <p class="card-text small" style={{ fontSize: "10px" }}>
               <span>
                 <pre>{templateString}</pre>
@@ -95,13 +84,17 @@ const Display = (props) => {
             </p>
           </div>
           <div class="d-grid gap-2 mb-4">
-            <button class="btn btn-link" onClick={handleCopyClick}>
+            <p class="small">
+              When satisfied with your HTML, click below to automatically Copy
+              it
+            </p>
+            <button class="btn btn-success" onClick={handleCopyClick}>
               {" "}
               Copy HTML to clipboard{" "}
             </button>
           </div>
         </div>
-        <div class="col">
+        <div class="col-6">
           <Preview templateString={templateString} />
         </div>
       </div>
