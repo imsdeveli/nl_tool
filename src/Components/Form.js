@@ -98,7 +98,7 @@ const Form = (props) => {
           </div>
           <div class="mb-2">
             <textarea
-              style={{ height: "11vh", "font-size": "10px" }}
+              style={{ height: "11vh", fontSize: "10px" }}
               class="form-control"
               placeholder="Ad 1"
               {...register("Ad1", {})}
@@ -106,7 +106,7 @@ const Form = (props) => {
           </div>
           <div class="mb-2">
             <textarea
-              style={{ height: "11vh", "font-size": "10px" }}
+              style={{ height: "11vh", fontSize: "10px" }}
               class="form-control"
               placeholder="Ad 2"
               {...register("Ad2", {})}
@@ -114,7 +114,7 @@ const Form = (props) => {
           </div>
           <div class="mb-2">
             <textarea
-              style={{ height: "11vh", "font-size": "10px" }}
+              style={{ height: "11vh", fontSize: "10px" }}
               class="form-control"
               placeholder="Ad 3"
               {...register("Ad3", {})}

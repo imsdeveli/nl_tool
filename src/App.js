@@ -118,7 +118,7 @@ function App() {
 
     let fBodArray = bodArray.concat();
 
-    const toDelete = ["", " ", " "];
+    // const toDelete = ["", " ", " "];
 
     const fBodArr = fBodArray.filter((item) => item.length > 1);
 
@@ -522,10 +522,7 @@ function App() {
   // const [newEntries, setNewEntries] = useState({})
   return (
     <div class="App">
-      <div
-        class="container-fluid p-3"
-        style={{ "background-color": "#000000" }}
-      >
+      <div class="container-fluid p-3" style={{ backgroundColor: "#000000" }}>
         <div class="row" style={{ display: "flex" }}>
           {" "}
           <div class="col">
