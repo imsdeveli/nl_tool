@@ -118,16 +118,24 @@ function App() {
 
     let fBodArray = bodArray.concat();
 
+    const toDelete = ["", " ", " "];
+
+    const fBodArr = fBodArray.filter((item) => item.length > 1);
+
+    // const fBodArr = fBodArray.filter((item) => !toDelete.includes(item));
+
     bodArray.splice(0, 2);
     let bodString = bodArray.join("");
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
-    console.log("fBodArray: ", fBodArray);
-    console.log("bodString:   ", bodString);
     console.log("bodArray: ", bodArray);
+    console.log("fBodArray: ", fBodArray);
+    console.log("fBodArr: ", fBodArr);
 
-    let bodyObj = { bodString, bodArray, fBodArray };
+    console.log("bodString:   ", bodString);
+
+    let bodyObj = { bodString, bodArray, fBodArr };
     return bodyObj;
   };
   const cutBodyPTR = (response) => {
@@ -140,18 +148,23 @@ function App() {
     $(pTags).each(function (i, e) {
       bodArray[i] = $(e).text();
     });
+
     let fBodArray = bodArray.concat();
+
+    const fBodArr = fBodArray.filter((item) => item.length > 1);
 
     bodArray.splice(0, 2);
     let bodString = bodArray.join("");
     bodString = bodString.substring(0, 300);
     bodString = bodString.concat("...");
 
-    console.log("fBodArray: ", fBodArray);
-    console.log("bodString:   ", bodString);
     console.log("bodArray: ", bodArray);
+    console.log("fBodArray: ", fBodArray);
+    console.log("fBodArr: ", fBodArr);
 
-    let bodyObj = { bodString, bodArray, fBodArray };
+    console.log("bodString:   ", bodString);
+
+    let bodyObj = { bodString, bodArray, fBodArr };
     return bodyObj;
   };
 
@@ -172,15 +185,15 @@ function App() {
           let $ = cheerio.load(response.data);
           let bodyObj = cutBody(response);
           let body = bodyObj.bodString;
-          let bodyArray = bodyObj.fBodArray;
+          let bodyArray = bodyObj.fBodArr;
 
-          let bodPar1 = bodyArray.slice(0, 2).join(" ");
+          let bodPar1 = bodyArray.slice(0, 1);
 
-          let bodPar2 = bodyArray.slice(2, 4).join(" ");
+          let bodPar2 = bodyArray.slice(1, 2);
 
-          let bodPar3 = bodyArray.slice(4, 6).join(" ");
+          let bodPar3 = bodyArray.slice(2, 3);
 
-          let bodPar4 = bodyArray.slice(6, 8).join(" ");
+          let bodPar4 = bodyArray.slice(3, 4);
 
           console.log(
             "Featured Arrays      par1:",
@@ -220,15 +233,15 @@ function App() {
           let $ = cheerio.load(response.data);
           let bodyObj = cutBodyPTR(response);
           let body = bodyObj.bodString;
-          let bodyArray = bodyObj.fBodArray;
+          let bodyArray = bodyObj.fBodArr;
 
-          let bodPar1 = bodyArray.slice(0, 2).join(" ");
+          let bodPar1 = bodyArray.slice(0, 1);
 
-          let bodPar2 = bodyArray.slice(2, 4).join(" ");
+          let bodPar2 = bodyArray.slice(1, 2);
 
-          let bodPar3 = bodyArray.slice(4, 6).join(" ");
+          let bodPar3 = bodyArray.slice(2, 3);
 
-          let bodPar4 = bodyArray.slice(6, 8).join(" ");
+          let bodPar4 = bodyArray.slice(3, 4);
 
           console.log(
             "Featured Arrays      par1:",
@@ -269,15 +282,15 @@ function App() {
           let $ = cheerio.load(response.data);
           let bodyObj = cutBody(response);
           let body = bodyObj.bodString;
-          let bodyArray = bodyObj.fBodArray;
+          let bodyArray = bodyObj.fBodArr;
 
-          let bodPar1 = bodyArray.slice(0, 2).join(" ");
+          let bodPar1 = bodyArray.slice(0, 1);
 
-          let bodPar2 = bodyArray.slice(2, 4).join(" ");
+          let bodPar2 = bodyArray.slice(1, 2);
 
-          let bodPar3 = bodyArray.slice(4, 6).join(" ");
+          let bodPar3 = bodyArray.slice(2, 3);
 
-          let bodPar4 = bodyArray.slice(6, 8).join(" ");
+          let bodPar4 = bodyArray.slice(3, 4);
 
           console.log(
             "Featured Arrays      par1:",
